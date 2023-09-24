@@ -1,0 +1,86 @@
+.section-background {
+  background: linear-gradient(-45deg, #0F1480, #283380, #7C87CC, #BC8FFF, #BC8FFF, #9BA9FF, #7C87CC, #4F67FF, #283380, #0F1480);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  height:100vh;
+
+}
+
+
+/** enable once done (display: none);
+html ::-webkit-scrollbar{
+}
+*/
+
+/*
+***************
+TITLE CONTAINER
+***************
+*/
+.div-drone-background {
+  background-image: url('/images/drone4_opacity.png');
+  background-size: cover;
+  height:100vh;
+}
+
+.text-div {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  height:50rem;
+}
+.text-title {
+    color: white;
+    font-size: 15rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    margin:0;
+
+}
+
+.text-title-subtext {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.carousel-images {
+  width:850px;
+  height:1150px;
+}
+
+.carousel {
+  width: 850px;
+  height:1150px;
+}
+
+.row{
+  width: 200vh;
+}
+
+.carouseltransform {
+  padding-left: 13%;
+  padding-top: 5%;
+}
+
+
+
+/*
+***************
+PROBLEM/SOLUTION CONTAINER
+***************
+*/
+
+

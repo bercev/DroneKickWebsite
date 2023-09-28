@@ -1,11 +1,10 @@
 .section-background {
-  background: linear-gradient(-45deg, #0F1480, #283380, #7C87CC, #BC8FFF, #BC8FFF, #9BA9FF, #7C87CC, #4F67FF, #283380, #0F1480);
-  background-size: 180% 180%;
-  animation: gradient-animation 12s ease infinite;
-  height:100vh;
-
+  background-color: #283680;
+  z-index:0;
 }
-
+#section1{
+  height:100vh;
+}
 
 /** enable once done (display: none);
 html ::-webkit-scrollbar{
@@ -17,25 +16,32 @@ html ::-webkit-scrollbar{
 TITLE CONTAINER
 ***************
 */
+
 .div-drone-background {
   background-image: url('/images/drone4_opacity.png');
   background-size: cover;
   height:100vh;
 }
 
-.text-div {
-  position: relative;
-  top: 10%;
-  left: 5%;
-  height:50rem;
+.title-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:70vh;
 }
+
+.text-div {
+  width:50%;
+  height:50%;
+  text-align: center;
+}
+
 .text-title {
     color: white;
-    font-size: 15rem;
+    font-size: 10rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
     margin:0;
-
 }
 
 .text-title-subtext {
@@ -56,31 +62,139 @@ TITLE CONTAINER
     }
 }
 
-.carousel-images {
-  width:850px;
-  height:1150px;
+/*
+***************
+PROBLEM/SOLUTION SECTION
+***************
+*/
+#section2{
+  height:50vh;
+  display: flex;
+  gap:10px;
+  background-color: aquamarine;
 }
 
-.carousel {
-  width: 850px;
-  height:1150px;
+.problem {
+  border:solid white;
+  flex:1;
+  text-align: center;
+  padding-top: 12.5vh;
+  padding-left:30px;
+  padding-right:30px;
 }
 
-.row{
-  width: 200vh;
+#pNr {
+  font-size: 5rem;
 }
-
-.carouseltransform {
-  padding-left: 13%;
-  padding-top: 5%;
-}
-
 
 
 /*
 ***************
-PROBLEM/SOLUTION CONTAINER
+FEATURES SECTION
+***************
+*/
+#section3{
+  height:70vh;
+  background-color: lightskyblue;
+}
+#features-title{
+  color:white;
+  font-size: 5rem;
+}
+.feature-description {
+  color:white;
+  padding-right: 50px;
+  font-size: 1.5rem;
+
+}
+
+.feature-icon-small{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+.iconcolor 
+{
+  color: black;
+}
+
+.feature-padding{
+  padding: 30px;
+}
+
+.individual-feature-title{
+  color: white;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+}
+
+.individual-feature-subtext {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*
+***************
+PRICING SECTION
 ***************
 */
 
+#section4{
+  height: fit-content;
+  background-color: lightblue;
+}
 
+.pricing-title-padding{
+  padding-bottom: 10px;
+}
+
+.compare-plans{
+  color: white;
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.expensive-containers{
+  width:100%;
+  gap:30px;
+  padding-left: 100px;
+  padding-right:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expensive-items{
+  flex:1;
+}
+/*
+***************
+ABOUT US SECTION
+***************
+*/
+
+#section5{
+  background-color: #f9f9f9;
+  height:fit-content;
+}
+.carousel-images, .carousel {
+  width:850px;
+  height:700px;
+}
+
+.carousel-container{
+  width:100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.ee {
+  margin-left: 27%;
+}
+
+.about-us-title{
+  text-align: center;
+  padding:30px;
+}
